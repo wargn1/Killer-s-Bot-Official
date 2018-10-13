@@ -38,7 +38,7 @@ client.on("message", async message => {
 
   //comando odio
   if(comando === "odio") {
-    return message.reply("Arghh!Tenho ódio de muitas coisas! Tenho ódio de quando minhas vitimas fojem de mim! :rage: ");
+    return message.reply("Arghh! Tenho ódio de muitas coisas! Tenho ódio de quando minhas vitimas fojem de mim! :rage:");
   }
   //comando idade
   if(comando === "idade") {
