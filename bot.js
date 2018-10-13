@@ -36,8 +36,8 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const comando = args.shift().toLowerCase();
 
-  //comando ódio
-  if(comando === "´ódio") {
+  //comando odio
+  if(comando === "´odio") {
     return message.reply("Arghh!Tenho ódio de muitas coisas! Tenho ódio de quando minhas vitimas fojem de mim! :rage: ");
   }
   //comando idade
