@@ -37,7 +37,7 @@ client.on("message", async message => {
   const comando = args.shift().toLowerCase();
 
   //comando odio
-  if(comando === "´odio") {
+  if(comando === "odio") {
     return message.reply("Arghh!Tenho ódio de muitas coisas! Tenho ódio de quando minhas vitimas fojem de mim! :rage: ");
   }
   //comando idade
