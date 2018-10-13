@@ -38,7 +38,7 @@ client.on("message", async message => {
 
   //comando Namorada?
   if(comando === "Namorada?") {
-  return message.reply("Mais é claro! A jane é minha fiel companheira! Mas de vez enquando rola algumas coisinhas :smiling_imp: ");
+    return message.reply("Mais é claro! A jane é minha fiel companheira! Mas de vez enquando rola algumas coisinhas :smiling_imp: ");
   }
   //comando Vitimas?
   if(comando === "Vitimas?") {
