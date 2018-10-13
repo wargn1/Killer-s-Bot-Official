@@ -37,11 +37,11 @@ client.on("message", async message => {
   const comando = args.shift().toLowerCase();
 
   //comando jRespostas1
-  if(comando === "Você tem namorada?") {
+  if(comando === "Você,tem,namorada?") {
   return message.reply("Mais é claro! A jane é minha fiel companheira! Mas de vez enquando rola algumas coisinhas :smiling_imp: ");
   }
   //comando jRespostas
-  if(comando === "você matou quantas pessoas?") {
+  if(comando === "você,matou,quantas,pessoas?") {
     return message.reply("Inumeras! haahahahah! A proxima pessoa será você! :smiling_imp:");
   }
   //comando jeff
