@@ -36,13 +36,21 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const comando = args.shift().toLowerCase();
 
-  //comando Namorada?
+  //comando ódio
+  if(comando === "´ódio") {
+    return message.reply("Arghh!Tenho ódio de muitas coisas! Tenho ódio de quando minhas vitimas fojem de mim! :rage: ");
+  }
+  //comando idade
+  if(comando === "idade") {
+    return message.reply("Nossa! Agora você me pegou! Já tem um tempo que eu morri mas... É, pelo visto não me lembro qual minha idade :confused: ");
+  }
+  //comando namorada
   if(comando === "namorada") {
     return message.reply("Mais é claro! A jane é minha fiel companheira! Mas de vez enquando rola algumas coisinhas :smiling_imp: ");
   }
-  //comando Vitimas?
+  //comando vitimas
   if(comando === "vitimas") {
-    return message.reply("Claro que ja fiz Inumeras Vitimas! haahahahah! Mas a proxima pessoa será você! :smiling_imp:");
+    return message.reply("Inumeras! haahahahah! A proxima pessoa será você! :smiling_imp:");
   }
   //comando jeff
   if(comando === "jeff") {
