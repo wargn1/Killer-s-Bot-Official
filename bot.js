@@ -37,12 +37,12 @@ client.on("message", async message => {
   const comando = args.shift().toLowerCase();
 
   //comando Namorada?
-  if(comando === "Namorada?") {
+  if(comando === "namorada") {
     return message.reply("Mais é claro! A jane é minha fiel companheira! Mas de vez enquando rola algumas coisinhas :smiling_imp: ");
   }
   //comando Vitimas?
-  if(comando === "Vitimas?") {
-    return message.reply("Inumeras! haahahahah! A proxima pessoa será você! :smiling_imp:");
+  if(comando === "vitimas") {
+    return message.reply("Claro que ja fiz Inumeras Vitimas! haahahahah! Mas a proxima pessoa será você! :smiling_imp:");
   }
   //comando jeff
   if(comando === "jeff") {
