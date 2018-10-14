@@ -138,9 +138,8 @@ client.on("message", async message => {
       return message.reply("Ei!, você não disse quem eu devo esfaquear!");
     let member = message.mentions.members.first();
     if(!member)
-    let reason = args.slice(1).join(' ');
     if(!reason) reason = "Ei!, Fale o nome de quem irei matar e esfaquear! 👹");
-    if(!member)
+    let reason = args.slice(1).join(' ');
     message.reply(`${message.author.tag} esfaqueou ${message.user.tag}`);
 
 }); 
