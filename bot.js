@@ -132,11 +132,8 @@ client.on("message", async message => {
       return message.reply("Fale o nome de quem irei matar e esfaquear! 👹");
 
     let reason = args.slice(1).join(' ');
-    if(!reason) reason = "Ei!, você não disse por que quer que eu esqueie ele!";
-
-    await member.ban(reason)
-      .catch(error => message.reply(`Desculpe ${message.author} não consegui banir o membro devido o : ${error}`));
-    message.reply(`${member.author.tag} foi banido por ${message.user.tag}`);
+    if(!reason) reason = "Esfaqueou";
+    message.reply(`${member.author.tag} Esfaqueou ${message.user.tag}: `);
   }
 }); 
 
