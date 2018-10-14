@@ -127,21 +127,17 @@ client.on("message", async message => {
   }
   // comando esfaquear
   if(comando === "esfaquear") {
-    //adicione o nome do cargo que vc quer que use esse comando!
-    if(!message.member.roles.some(r=>["Nome do cargo"].includes(r.name)) )
-    if(!message.member.roles.some(r=>["🔪Killer🔪"].includes(r.name)) )
-    if(!message.member.roles.some(r=>["ADMIN"].includes(r.name)) )
-    if(!message.member.roles.some(r=>["Moderador"].includes(r.name)) )
-    if(!message.member.roles.some(r=>["🔪Killer DEV🔪"].includes(r.name)) )
-    if(!message.member.roles.some(r=>["Ajudante"].includes(r.name)) )
-    if(!message.member.roles.some(r=>["VIP Mestre"].includes(r.name)) ) 
-      return message.reply("Ei!, você não disse quem eu devo esfaquear!");
     let member = message.mentions.members.first();
     if(!member)
-    if(!reason) reason = "Ei!, Fale o nome de quem irei matar e esfaquear! 👹");
-    if(!member)
-    message.reply(`${message.author.tag} esfaqueou ${message.user.tag}`);
+      return message.reply("Fale o nome de quem irei matar e esfaquear! 👹");
 
+    let reason = args.slice(1).join(' ');
+    if(!reason) reason = "Ei!, você não disse por que quer que eu esqueie ele!";
+
+    await member.ban(reason)
+      .catch(error => message.reply(`Desculpe ${message.author} não consegui banir o membro devido o : ${error}`));
+    message.reply(`${member.author.tag} foi banido por ${message.user.tag}`);
+  }
 }); 
 
 client.login(config.token);
