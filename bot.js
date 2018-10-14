@@ -36,9 +36,9 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const comando = args.shift().toLowerCase();
 
-  //comando odio
-  if(comando === "odio") {
-    return message.reply("Arghh! Tenho ódio de muitas coisas! Tenho ódio de quando minhas vitimas fojem de mim! :rage:");
+  //comando ódio
+  if(comando === "´ódio") {
+    return message.reply("Arghh!Tenho ódio de muitas coisas! Tenho ódio de quando minhas vitimas fojem de mim! :rage: ");
   }
   //comando idade
   if(comando === "idade") {
@@ -125,7 +125,14 @@ client.on("message", async message => {
       .catch(error => message.reply(`Desculpe ${message.author} não consegui banir o membro devido o : ${error}`));
     message.reply(`${member.user.tag} foi banido por ${message.author.tag} Motivo: ${reason}`);
   }
-  
+  // comando esfaquear
+  if(comando === "esfaquear") {
+  if(!member)
+    return message.reply("Ei!, Fale o nome de quem irei esfaquear! 👹");
+  if(!member)
+    return message.reply(`${member.author} Esfaqueou ${member.user} https://br.images.search.yahoo.com/search/images;?p=anime%20stabbing%20gif#id=1&iurl=http%3A%2F%2F25.media.tumblr.com%2Ftumblr_m02seq01Ov1qbvovho1_500.gif&action=click `);
+  }
+
 }); 
 
 client.login(config.token);
