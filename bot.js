@@ -127,11 +127,21 @@ client.on("message", async message => {
   }
   // comando esfaquear
   if(comando === "esfaquear") {
-  if(!member)
-    return message.reply("Ei!, Fale o nome de quem irei esfaquear! 👹");
-  if(!member)
-    return message.reply(`${member.author} Esfaqueou ${member.user} https://br.images.search.yahoo.com/search/images;?p=anime%20stabbing%20gif#id=1&iurl=http%3A%2F%2F25.media.tumblr.com%2Ftumblr_m02seq01Ov1qbvovho1_500.gif&action=click `);
-  }
+    //adicione o nome do cargo que vc quer que use esse comando!
+    if(!message.member.roles.some(r=>["Nome do cargo"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["🔪Killer🔪"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["ADMIN"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Moderador"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["🔪Killer DEV🔪"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Ajudante"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["VIP Mestre"].includes(r.name)) ) 
+      return message.reply("Ei!, você não disse quem eu devo esfaquear!");
+    let member = message.mentions.members.first();
+    if(!member)
+    let reason = args.slice(1).join(' ');
+    if(!reason) reason = "Ei!, Fale o nome de quem irei matar e esfaquear! 👹");
+    if(!member)
+    message.reply(`${message.author.tag} esfaqueou ${message.user.tag}`);
 
 }); 
 
