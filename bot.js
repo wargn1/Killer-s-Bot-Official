@@ -133,7 +133,7 @@ client.on("message", async message => {
 
     let reason = args.slice(1).join(' ');
     if(!reason) reason = "Esfaqueou";
-    message.reply(`${member.author.tag} Esfaqueou ${message.user.tag}: `);
+    message.reply(`${member.author.tag} Esfaqueou ${message.user.tag}: https://78.media.tumblr.com/tumblr_m02seq01Ov1qbvovho1_500.gif`);
   }
 }); 
 
