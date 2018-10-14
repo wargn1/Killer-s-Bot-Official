@@ -52,6 +52,10 @@ client.on("message", async message => {
   if(comando === "vitimas") {
     return message.reply("Inumeras! haahahahah! A proxima pessoa será você! :smiling_imp:");
   }
+  //comando hentai
+  if(comando === "hentai") {
+    return message.reply("Aqui https://erogazou-saru.com/wp-content/uploads/2017/10/nijigensexgif_erogazou002.gif");
+  }
   //comando jeff
   if(comando === "jeff") {
     return message.reply("https://media1.tenor.com/images/2580506c719dd661ab9c5eb0b73ec320/tenor.gif?itemid=8287273 Aproveite o horror! :smiling_imp: ");
